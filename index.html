@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+                <form action="registration.php" method="post">
+                    <div class="text-center">
+                        <strong>Registration</strong>
+                        <hr>
+                    </div>
+                    <label class="form-label">Full Name:</label>
+                    <input type="text" name="name" class="form-control">
+
+                    <label class="form-label">Email:</label>
+                    <input type="email" name="email" class="form-control">
+
+                    <label class="form-label">Password:</label>
+                    <input type="password" name="password" class="form-control">
+
+                    <label class="form-label">Phone No:</label>
+                    <input type="number" name="phone" class="form-control">
+
+                    <div class="d-grid mt-1">
+                        <label class="form-label" for="country">Select Your Country:</label>
+                        <select id="country" name="country">
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-label">Gender:</label><br>
+                        <input type="radio" name="gender" id="male" value="Male" checked >
+                        <label for="male" class="form-label">Male</label>
+
+                        <input type="radio" name="gender" id="female" value="Female" >
+                        <label for="female">Female</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-label">Description:</label>
+                        <textarea name="message" rows="5" cols="30" class="form-control"></textarea> 
+                    </div>
+                      
+                    <br>
+                    <div class="text-center d-grid mt-1">
+                        <input type="submit" value="Submit" class="btn btn-outline-warning btn-block">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="assets/js/bootstrap.bundle.js"></script>
+</html>
