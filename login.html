@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Login Form</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-4 login-bg">
                 <form action="registration.php" method="post">
                     <div class="text-center">
-                        <strong>Login</strong>
+                        <strong>Billing System</strong>
                         <hr>
                     </div>
 
-                    <label class="form-label">Email:</label>
-                    <input type="email" name="email" class="form-control">
+                    <label class="form-label" for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
 
                     <label class="form-label">Password:</label>
-                    <input type="password" name="password" class="form-control">
+                    <input type="password" name="password" class="form-control" required>
 
                     <br>
                     <div class="text-center d-grid mt-1">
-                        <input type="submit" value="Submit" class="btn btn-outline-warning btn-block">
+                        <input type="submit" value="Login" class="btn btn-outline-warning btn-block">
                     </div>
                 </form>
 

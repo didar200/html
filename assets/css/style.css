@@ -1,0 +1,12 @@
+body{
+    background-color: #DAE9F4;
+}
+
+.login-bg{
+    background-color: #4F6D83;
+    opacity: 95%;
+    line-height: 200%;
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 10px;
+}
